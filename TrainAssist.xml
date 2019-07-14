@@ -119,12 +119,12 @@ function process_information()
 	showmsg("Strength", str_canTrain)
 end
 
-function setup_train_session_var(wildcards)
+function setup_train_session_var(name, line, wildcards)
 	char_train_sessions = wildcards[1]
 	process_information()
 end
 
-function setup_stat_vars(wildcards)
+function setup_stat_vars(name, line, wildcards)
    statName = wildcards[1]
    
    if statName == "Strength" then
