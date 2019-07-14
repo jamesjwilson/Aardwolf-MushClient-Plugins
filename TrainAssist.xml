@@ -137,22 +137,22 @@ function setup_stat_vars(name, line, wildcards)
 	  int_trainedAmt = wildcards[7]
 	  int_statMax = wildcards[8]
 	  int_canTrain = int_statMax - int_trainedAmt
-	elseif statName == "Intelligence" then
+	elseif statName == "Wisdom" then
       wis_yourCost = wildcards[6]
 	  wis_trainedAmt = wildcards[7]
 	  wis_statMax = wildcards[8]
 	  wis_canTrain = wis_statMax - wis_trainedAmt
-	elseif statName == "Intelligence" then
+	elseif statName == "Dexteriry" then
       dex_yourCost = wildcards[6]
 	  dex_trainedAmt = wildcards[7]
 	  dex_statMax = wildcards[8]
 	  dex_canTrain = dex_statMax - dex_trainedAmt
-	elseif statName == "Intelligence" then
+	elseif statName == "Constitution" then
       con_yourCost = wildcards[6]
 	  con_trainedAmt = wildcards[7]
 	  con_statMax = wildcards[8]
 	  con_canTrain = con_statMax - con_trainedAmt
-	elseif statName == "Intelligence" then
+	elseif statName == "Luck" then
       lck_yourCost = wildcards[6]
 	  lck_trainedAmt = wildcards[7]
 	  lck_statMax = wildcards[8]
