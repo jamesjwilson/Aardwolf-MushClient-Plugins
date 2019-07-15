@@ -51,6 +51,15 @@ Build out help file
    sequence="100"
   >
   </trigger>
+  <trigger
+   enabled="y"
+   script="display_info"
+   match="^You have (\d+) total stats out of (\d+) maximum.$"
+   regexp="y"
+   send_to="10"
+   sequence="100"
+  >
+  </trigger>
 </triggers>
 
 <!--  Aliases  -->
@@ -82,14 +91,13 @@ function OnHelp ()
   world.Note (world.GetPluginInfo (world.GetPluginID (), 3))
 end
 ]]>
-
-function process_information()
-	showmsg("Strength", str_canTrain)
+function display_info()
+	ColourNote("SteelBlue", "", "[", "MediumSeaGreen", "", "--------------------------------------------------------------------------------", "SteelBlue", "", "]")
+	ColourNote("SteelBlue", "", "[", "MediumSeaGreen", "", "Strength", "SteelBlue", "", "] can be trained " .. str_canTrain .. " times" )
 end
 
 function setup_train_session_var(name, line, wildcards)
 	char_train_sessions = wildcards[1]
-	process_information()
 end
 
 function setup_stat_vars(name, line, wildcards)
