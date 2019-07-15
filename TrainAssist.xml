@@ -83,38 +83,6 @@ function OnHelp ()
 end
 ]]>
 
-str_yourCost = 0
-str_trainedAmt = 0
-str_statMax = 0
-str_canTrain = 0
-
-int_yourCost = 0
-int_trainedAmt = 0
-int_statMax = 0
-int_canTrain = 0
-
-wis_yourCost = 0
-wis_trainedAmt = 0
-wis_statMax = 0
-wis_canTrain = 0
-
-dex_yourCost = 0
-dex_trainedAmt = 0
-dex_statMax = 0
-dex_canTrain = 0
-
-con_yourCost = 0
-con_trainedAmt = 0
-con_statMax = 0
-con_canTrain = 0
-
-lck_yourCost = 0
-lck_trainedAmt = 0
-lck_statMax = 0
-lck_canTrain = 0
-
-char_train_sessions = 0
-
 function process_information()
 	showmsg("Strength", str_canTrain)
 end
